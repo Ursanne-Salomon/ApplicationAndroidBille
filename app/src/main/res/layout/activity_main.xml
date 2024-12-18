@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Affichage de l'inclinaison -->
+    <TextView
+        android:id="@+id/sensorTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Inclinaison : 0°"
+        android:textSize="16sp"
+        android:padding="8dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        tools:ignore="MissingConstraints" />
+
+    <!-- Affichage des axes X, Y, Z -->
+    <TextView
+        android:id="@+id/axeX"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Axe X : "
+        android:textSize="16sp"
+        android:layout_marginTop="48dp"
+        android:gravity="start"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/axeY"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Axe Y : "
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:gravity="start"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/axeZ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Axe Z : "
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:gravity="start"
+        tools:ignore="MissingConstraints" />
+
+    <!-- La bille que l'on va déplacer -->
+    <ImageView
+        android:id="@+id/bille"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/ic_bille"
+        tools:ignore="MissingConstraints" /> <!-- Assurez-vous d'ajouter une image pour la bille -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
